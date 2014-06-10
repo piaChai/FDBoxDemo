@@ -1,0 +1,15 @@
+/* 
+  Localization.strings
+  Demo
+
+  Created by hulingzhi on 14-6-10.
+  Copyright (c) 2014年 hulingzhi. All rights reserved.
+*/
+
+"Next_Step"="下一步";
+"Prev_Step"="上一步";
+"Finish"="完成";
+"Step1"="连接电源";
+"Step2"="打开手机wifi界面，选择XXXX";
+"Step3"="请选择您的家用路由器";
+"Step4"="设备已经连入路由器，是否需要添加新的设备？";

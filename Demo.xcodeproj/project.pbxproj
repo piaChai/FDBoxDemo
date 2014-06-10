@@ -19,6 +19,10 @@
 		07003B051946882C002049EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07003AED1946882C002049EE /* UIKit.framework */; };
 		07003B0D1946882C002049EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07003B0B1946882C002049EE /* InfoPlist.strings */; };
 		07003B0F1946882C002049EE /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07003B0E1946882C002049EE /* DemoTests.m */; };
+		07003B211946914A002049EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07003B231946914A002049EE /* Localizable.strings */; };
+		07003B2819469489002049EE /* FDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07003B2619469489002049EE /* FDSettingViewController.m */; };
+		07003B2919469489002049EE /* FDSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07003B2719469489002049EE /* FDSettingViewController.xib */; };
+		07003B2C19469B22002049EE /* FDSettingStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07003B2B19469B22002049EE /* FDSettingStepView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,15 @@
 		07003B0A1946882C002049EE /* DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTests-Info.plist"; sourceTree = "<group>"; };
 		07003B0C1946882C002049EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07003B0E1946882C002049EE /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		07003B1B1946909C002049EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		07003B1C1946909C002049EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		07003B221946914A002049EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		07003B241946914E002049EE /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		07003B2519469489002049EE /* FDSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSettingViewController.h; sourceTree = "<group>"; };
+		07003B2619469489002049EE /* FDSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSettingViewController.m; sourceTree = "<group>"; };
+		07003B2719469489002049EE /* FDSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDSettingViewController.xib; sourceTree = "<group>"; };
+		07003B2A19469B22002049EE /* FDSettingStepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSettingStepView.h; sourceTree = "<group>"; };
+		07003B2B19469B22002049EE /* FDSettingStepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSettingStepView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +122,11 @@
 			children = (
 				07003AF81946882C002049EE /* FDAppDelegate.h */,
 				07003AF91946882C002049EE /* FDAppDelegate.m */,
+				07003B2519469489002049EE /* FDSettingViewController.h */,
+				07003B2619469489002049EE /* FDSettingViewController.m */,
+				07003B2719469489002049EE /* FDSettingViewController.xib */,
+				07003B2A19469B22002049EE /* FDSettingStepView.h */,
+				07003B2B19469B22002049EE /* FDSettingStepView.m */,
 				07003AFB1946882C002049EE /* Images.xcassets */,
 				07003AF01946882C002049EE /* Supporting Files */,
 			);
@@ -122,6 +140,7 @@
 				07003AF21946882C002049EE /* InfoPlist.strings */,
 				07003AF51946882C002049EE /* main.m */,
 				07003AF71946882C002049EE /* Demo-Prefix.pch */,
+				07003B231946914A002049EE /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,6 +222,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				es,
 			);
 			mainGroup = 07003ADD1946882C002049EE;
 			productRefGroup = 07003AE71946882C002049EE /* Products */;
@@ -221,7 +242,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07003AF41946882C002049EE /* InfoPlist.strings in Resources */,
+				07003B211946914A002049EE /* Localizable.strings in Resources */,
 				07003AFC1946882C002049EE /* Images.xcassets in Resources */,
+				07003B2919469489002049EE /* FDSettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				07003AFA1946882C002049EE /* FDAppDelegate.m in Sources */,
+				07003B2C19469B22002049EE /* FDSettingStepView.m in Sources */,
+				07003B2819469489002049EE /* FDSettingViewController.m in Sources */,
 				07003AF61946882C002049EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +293,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				07003AF31946882C002049EE /* en */,
+				07003B1B1946909C002049EE /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -276,8 +302,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				07003B0C1946882C002049EE /* en */,
+				07003B1C1946909C002049EE /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07003B231946914A002049EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07003B221946914A002049EE /* en */,
+				07003B241946914E002049EE /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -315,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -363,7 +399,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,7 +414,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -431,7 +471,7 @@
 				07003B111946882C002049EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		07003B121946882C002049EE /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +480,7 @@
 				07003B141946882C002049EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		07003B151946882C002049EE /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +489,7 @@
 				07003B171946882C002049EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

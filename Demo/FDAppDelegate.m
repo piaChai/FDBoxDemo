@@ -7,6 +7,7 @@
 //
 
 #import "FDAppDelegate.h"
+#import "FDSettingViewController.h"
 
 @implementation FDAppDelegate
 
@@ -15,6 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    FDSettingViewController *ctrl = [[FDSettingViewController alloc]init];
+    ctrl.currentStep = SoundBoxSettingStepOne;
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:ctrl];
     [self.window makeKeyAndVisible];
     return YES;
 }
