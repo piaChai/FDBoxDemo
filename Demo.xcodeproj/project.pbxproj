@@ -23,6 +23,13 @@
 		07003B2819469489002049EE /* FDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07003B2619469489002049EE /* FDSettingViewController.m */; };
 		07003B2919469489002049EE /* FDSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07003B2719469489002049EE /* FDSettingViewController.xib */; };
 		07003B2C19469B22002049EE /* FDSettingStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07003B2B19469B22002049EE /* FDSettingStepView.m */; };
+		071E3644194708EB006CD91C /* FDMusicBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071E3642194708EB006CD91C /* FDMusicBoxViewController.m */; };
+		071E3645194708EB006CD91C /* FDMusicBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071E3643194708EB006CD91C /* FDMusicBoxViewController.xib */; };
+		071E364B19470BDE006CD91C /* ANBlurredImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 071E364819470BDE006CD91C /* ANBlurredImageView.m */; };
+		071E364C19470BDE006CD91C /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 071E364A19470BDE006CD91C /* UIImage+BoxBlur.m */; };
+		071E364E19470F6C006CD91C /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 071E364D19470F6C006CD91C /* Default@2x~iphone.png */; };
+		071E3651194710C1006CD91C /* BlurImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 071E3650194710C1006CD91C /* BlurImageView.m */; };
+		397BF252FB9B4503A86DCE90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599309F452694E85B09AC573 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +68,18 @@
 		07003B2719469489002049EE /* FDSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDSettingViewController.xib; sourceTree = "<group>"; };
 		07003B2A19469B22002049EE /* FDSettingStepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSettingStepView.h; sourceTree = "<group>"; };
 		07003B2B19469B22002049EE /* FDSettingStepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSettingStepView.m; sourceTree = "<group>"; };
+		071E3641194708EB006CD91C /* FDMusicBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDMusicBoxViewController.h; sourceTree = "<group>"; };
+		071E3642194708EB006CD91C /* FDMusicBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDMusicBoxViewController.m; sourceTree = "<group>"; };
+		071E3643194708EB006CD91C /* FDMusicBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDMusicBoxViewController.xib; sourceTree = "<group>"; };
+		071E364719470BDE006CD91C /* ANBlurredImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBlurredImageView.h; sourceTree = "<group>"; };
+		071E364819470BDE006CD91C /* ANBlurredImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBlurredImageView.m; sourceTree = "<group>"; };
+		071E364919470BDE006CD91C /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		071E364A19470BDE006CD91C /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		071E364D19470F6C006CD91C /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		071E364F194710C1006CD91C /* BlurImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurImageView.h; sourceTree = "<group>"; };
+		071E3650194710C1006CD91C /* BlurImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurImageView.m; sourceTree = "<group>"; };
+		0F657C947BA740CCAD23DFB7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		599309F452694E85B09AC573 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +90,7 @@
 				07003AEC1946882C002049EE /* CoreGraphics.framework in Frameworks */,
 				07003AEE1946882C002049EE /* UIKit.framework in Frameworks */,
 				07003AEA1946882C002049EE /* Foundation.framework in Frameworks */,
+				397BF252FB9B4503A86DCE90 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +114,7 @@
 				07003B081946882C002049EE /* DemoTests */,
 				07003AE81946882C002049EE /* Frameworks */,
 				07003AE71946882C002049EE /* Products */,
+				0F657C947BA740CCAD23DFB7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +134,7 @@
 				07003AEB1946882C002049EE /* CoreGraphics.framework */,
 				07003AED1946882C002049EE /* UIKit.framework */,
 				07003B021946882C002049EE /* XCTest.framework */,
+				599309F452694E85B09AC573 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,13 +142,20 @@
 		07003AEF1946882C002049EE /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				071E364619470BDE006CD91C /* ANBlurredImageView */,
 				07003AF81946882C002049EE /* FDAppDelegate.h */,
 				07003AF91946882C002049EE /* FDAppDelegate.m */,
+				071E364F194710C1006CD91C /* BlurImageView.h */,
+				071E3650194710C1006CD91C /* BlurImageView.m */,
 				07003B2519469489002049EE /* FDSettingViewController.h */,
 				07003B2619469489002049EE /* FDSettingViewController.m */,
 				07003B2719469489002049EE /* FDSettingViewController.xib */,
 				07003B2A19469B22002049EE /* FDSettingStepView.h */,
 				07003B2B19469B22002049EE /* FDSettingStepView.m */,
+				071E3641194708EB006CD91C /* FDMusicBoxViewController.h */,
+				071E3642194708EB006CD91C /* FDMusicBoxViewController.m */,
+				071E3643194708EB006CD91C /* FDMusicBoxViewController.xib */,
+				071E364D19470F6C006CD91C /* Default@2x~iphone.png */,
 				07003AFB1946882C002049EE /* Images.xcassets */,
 				07003AF01946882C002049EE /* Supporting Files */,
 			);
@@ -163,6 +192,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		071E364619470BDE006CD91C /* ANBlurredImageView */ = {
+			isa = PBXGroup;
+			children = (
+				071E364719470BDE006CD91C /* ANBlurredImageView.h */,
+				071E364819470BDE006CD91C /* ANBlurredImageView.m */,
+				071E364919470BDE006CD91C /* UIImage+BoxBlur.h */,
+				071E364A19470BDE006CD91C /* UIImage+BoxBlur.m */,
+			);
+			path = ANBlurredImageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07003B121946882C002049EE /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				AC236ADE94F549F08A9854D6 /* Check Pods Manifest.lock */,
 				07003AE21946882C002049EE /* Sources */,
 				07003AE31946882C002049EE /* Frameworks */,
 				07003AE41946882C002049EE /* Resources */,
+				0059FFE07566478BBC07F479 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071E364E19470F6C006CD91C /* Default@2x~iphone.png in Resources */,
+				071E3645194708EB006CD91C /* FDMusicBoxViewController.xib in Resources */,
 				07003AF41946882C002049EE /* InfoPlist.strings in Resources */,
 				07003B211946914A002049EE /* Localizable.strings in Resources */,
 				07003AFC1946882C002049EE /* Images.xcassets in Resources */,
@@ -258,6 +302,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0059FFE07566478BBC07F479 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC236ADE94F549F08A9854D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07003AE21946882C002049EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,8 +342,12 @@
 			files = (
 				07003AFA1946882C002049EE /* FDAppDelegate.m in Sources */,
 				07003B2C19469B22002049EE /* FDSettingStepView.m in Sources */,
+				071E364B19470BDE006CD91C /* ANBlurredImageView.m in Sources */,
 				07003B2819469489002049EE /* FDSettingViewController.m in Sources */,
 				07003AF61946882C002049EE /* main.m in Sources */,
+				071E3651194710C1006CD91C /* BlurImageView.m in Sources */,
+				071E364C19470BDE006CD91C /* UIImage+BoxBlur.m in Sources */,
+				071E3644194708EB006CD91C /* FDMusicBoxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +474,7 @@
 		};
 		07003B131946882C002049EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F657C947BA740CCAD23DFB7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -408,6 +490,7 @@
 		};
 		07003B141946882C002049EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F657C947BA740CCAD23DFB7 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -3,12 +3,12 @@
 //  Demo
 //
 //  Created by hulingzhi on 14-6-10.
-//  Copyright (c) 2014年 hulingzhi. All rights reserved.
+//  Copyright (c) 2014年 CVTE. All rights reserved.
 //
 
 #import "FDSettingViewController.h"
 #import "FDSettingStepView.h"
-
+#import "FDMusicBoxViewController.h"
 
 
 
@@ -45,12 +45,14 @@
         case SoundBoxSettingStepOne:
             self.prevButton.hidden = YES;
             self.stepView.stepContentString = NSLocalizedString(@"Step1", nil);
+            [self.nextButton setTitle:NSLocalizedString(@"Next_Step", nil) forState:UIControlStateNormal];
             break;
         case SoundBoxSettingStepTwo:
             self.stepView.stepContentString = NSLocalizedString(@"Step2", nil);
+            [self.nextButton setTitle:NSLocalizedString(@"Next_Step", nil) forState:UIControlStateNormal];
             break;
         case SoundBoxSettingStepThree:
-            self.nextButton.hidden = YES;
+            [self.nextButton setTitle:NSLocalizedString(@"Finish", nil) forState:UIControlStateNormal];
             self.stepView.stepContentString = NSLocalizedString(@"Step3", nil);
             break;
         default:
@@ -63,9 +65,7 @@
     [self.prevButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.prevButton];
     
-    NSString *str = NSLocalizedString(@"Next_Step", nil);
-    NSLog(@"%@",str);
-    [self.nextButton setTitle:NSLocalizedString(@"Next_Step", nil) forState:UIControlStateNormal];
+    
     [self.nextButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.nextButton];
     
@@ -81,6 +81,11 @@
 
 - (IBAction)nextButtonPressed:(id)sender {
     
+    if (self.currentStep == SoundBoxSettingStepThree) {
+        self.view.window.rootViewController = [[FDMusicBoxViewController alloc]init];
+        return;
+    }
+    
     FDSettingViewController *ctrl = [[FDSettingViewController alloc]initWithNibName:@"FDSettingViewController" bundle:nil];
     switch (self.currentStep) {
         case SoundBoxSettingStepOne:
@@ -89,6 +94,8 @@
         case SoundBoxSettingStepTwo:
             ctrl.currentStep = SoundBoxSettingStepThree;
             break;
+        case SoundBoxSettingStepThree:
+
         default:
             break;
     }
@@ -98,4 +105,7 @@
 - (IBAction)prevButtonPressed:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+
+
 @end
